@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header id="navbar" class="fixed w-full z-10">
+    <header id="navbar" class="fixed w-full z-10 p-5 md:p-0">
       <div class="max-w-6xl flex h-14 justify-between items-center mx-auto">
         <div class="flex items-center space-x-2 drop-shadow brightness-150">
           <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.08 204.09" class="h-6">
@@ -35,17 +35,17 @@
       </div>
     </header>
     <section class="relative w-full h-screen">
-      <img src="{{ asset('assets/images/hero/hero1.jpg') }}" alt="Hero Images" class="absolute w-full h-screen brightness-50 z-0">
-      <div class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-center space-y-5 w-max">
+      <img src="{{ asset('assets/images/hero/hero1.jpg') }}" alt="Hero Images" class="absolute object-cover w-full h-screen brightness-50 z-0">
+      <div class="w-full absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-center space-y-5 px-5 md:px-0">
         <h1 class="font-bold text-5xl text-white">Trans Talia</h1>
-        <h5 class="font-semibold text-xl text-white">Temukan pengalaman transportasi darat yang menarik bersama Trans Talia</h5>
+        <h5 class="font-semibold text-lg md:text-xl text-white">Temukan pengalaman transportasi darat yang menarik bersama Trans Talia</h5>
         <button class="font-semibold border rounded-md text-white px-5 py-2 mt-5 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black transition duration-200 ease-in-out">
           <a href="/jadwal" class="">Cek Jadwal Sekarang!</a>
         </button>
       </div>
     </section>
-    <section class="max-w-6xl mx-auto pt-32 pb-16">
-      <div class="grid grid-cols-2 gap-5">
+    <section class="max-w-6xl mx-auto p-5 md:px-0 md:pt-32 md:pb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="grid grid-rows-2">
           <div class="grid grid-cols-3 place-items-center gap-5">
             <div class="text-center">
@@ -79,28 +79,28 @@
           </h2>
         </div>
         <div class="grid grid-cols-3 mt-2">
-          <div class="relative h-64 rounded-lg border-4 border-black skew-y-[-5deg] overflow-hidden my-auto hover:skew-y-0 hover:h-96 hover:w-80 hover:left-1/2 hover:translate-x-[-50%] hover:z-10 transition duration-200 ease-in-out">
+          <div class="relative h-64 rounded-lg border-4 border-black skew-y-[-5deg] overflow-hidden my-auto hover:skew-y-0 hover:h-96 hover:w-80 hover:left-0 hover:z-10 transition duration-200 ease-in-out">
             <img src="{{ asset('assets/images/banner/jb5-1.jpg') }}" alt="" class="absolute object-cover w-full h-[calc(100%+50px)] rounded skew-y-[5deg] mt-[-25px] hover:skew-y-0">
           </div>
           <div class="relative h-80 rounded-lg border-4 border-black skew-y-[-5deg] overflow-hidden my-auto hover:skew-y-0 hover:h-96 hover:w-80 hover:left-1/2 hover:translate-x-[-50%] hover:z-10 transition duration-200 ease-in-out">
             <img src="{{ asset('assets/images/banner/jb5-2.jpg') }}" alt="" class="absolute object-cover w-full h-[calc(100%+50px)] rounded skew-y-[5deg] mt-[-25px] hover:skew-y-0">
           </div>
-          <div class="relative h-96 rounded-lg border-4 border-black skew-y-[-5deg] overflow-hidden my-auto hover:skew-y-0 hover:h-96 hover:w-80 hover:left-1/2 hover:translate-x-[-50%] hover:z-10 transition duration-200 ease-in-out">
+          <div class="relative h-96 rounded-lg border-4 border-black skew-y-[-5deg] overflow-hidden my-auto hover:skew-y-0 hover:h-96 hover:w-80 hover:translate-x-[-25%] hover:z-10 transition duration-200 ease-in-out">
             <img src="{{ asset('assets/images/banner/jb5-3.webp') }}" alt="" class="absolute object-cover w-full h-[calc(100%+50px)] rounded skew-y-[5deg] mt-[-25px] hover:skew-y-0">
           </div>
         </div>
       </div>
     </section>
-    <section class="max-w-6xl mx-auto py-16 space-y-10">
+    <section class="max-w-6xl mx-auto space-y-10 p-5 md:px-0 md: py-16">
       <h1 class="text-center font-bold text-3xl">Kunjungi kami</h1>
-      <div class="w-full h-[40rem] rounded-lg overflow-hidden">
+      <div class="w-full h-80 md:h-[40rem] rounded-lg overflow-hidden">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%&amp;hl=en&amp;q=transtalia%20bus%20garage+(My%20Business%20Name)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
       </div>
     </section>
-    <section class="max-w-6xl mx-auto pt-16 pb-32">
+    <section class="max-w-6xl mx-auto p-5 md:px-0 md:pt-16 md:pb-32">
       <a href="https://wa.me/082233994239" target="_blank">
         <div class="flex items-center rounded-lg shadow-lg overflow-hidden cursor-pointer hover:bg-green-500">
-          <img src="{{ asset('assets/images/banner/mercyjb5.jpeg') }}" alt="Mercy" class="h-64">
+          <img src="{{ asset('assets/images/banner/mercyjb5.jpeg') }}" alt="Mercy" class="h-32 md:h-64">
           <div class="w-full space-y-5">
             <h1 class="text-center font-bold text-3xl">Hubungi kami</h1>
             <div class="flex justify-center items-center space-x-3">
